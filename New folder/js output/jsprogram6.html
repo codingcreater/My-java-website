@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick="sum()">Click</button>
+<p id="demo"></p>
+ <script>
+function sum(){
+ let n1=20;
+let n2=5;
+let sum;
+if(n1==n2){
+sum=(n1+n2)*3;
+}
+else{
+sum=n1+n2;
+}
+document.getElementById("demo").innerHTML=`n1 = ${n1} , n2=${n2}  , sum = ${sum}`;
+ }
+</script>
+</body>
+</html>

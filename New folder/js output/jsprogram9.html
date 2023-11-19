@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick="checkVowel('b')">Click</button>
+ <p id="demo"></p>
+ <script>
+ function checkVowel(ch){
+ch=ch.toLowerCase();
+var result;
+switch(ch){
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    result="It is a vowel";
+    break;
+    default:
+    result="It is a consonant";
+    break;
+}
+document.write(result);
+}
+    </script>
+</body>
+</html>

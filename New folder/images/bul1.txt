@@ -1,0 +1,83 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: century 'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(img.jpeg.jpg);
+    background-size: cover;
+
+    font-family: sans-serif;
+    font-size: medium;
+}
+.menubar{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+.menubar ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+    font-size: 100%;
+}
+.menubar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 20px;
+    text-align: left;
+}
+.menubar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menubar ul li:hover{
+    background-color: aqua;
+    border-radius: 3px;
+
+}
+.submenu1{
+    display: none;
+
+}
+.menubar ul li:hover .submenu1{
+    display: block;
+    position: absolute;
+    background: white;
+    margin-top: 15px;
+    margin-left: 15px;
+    
+}
+.menubar ul li:hover .submenu1 ul{
+    display: block;
+    margin: 10px;
+}
+.menubar ul li:hover .submenu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px double black;
+    background: transparent;
+    border-radius: 0px;
+}
+    .menubar ul li:hover .submenu1 ul li a:hover{
+        color: darkcyan;
+
+    }
+.title{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+    border: 7px solid black;
+
+}   
+.title h1{
+    color: aliceblue;
+    font-size: 80px;
+    text-align: center;
+} 
+h1:hover{
+    color: darkcyan;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height:70px;
+        align-items: center;
+        background-color:black;
+        color:white;
+    }
+    .header-inner {
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border:0 2px solid white;
+        height: 60px;
+    
+    }
+    .header-inner ul{
+        list-style: none;
+        display: flex;
+
+    }
+
+    .logo span{
+        font-size: 2rem;
+    }
+
+    .header-inner ul li{
+        padding:1rem;
+    
+        
+    }
+
+    li a{
+        
+        padding:1rem;
+        text-decoration: none;
+        color:white;
+    }
+
+    li a:hover{
+        color:blueviolet
+    }
+
+    .logo-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    
+
+    }
+
+    .logo-content-inner{
+        padding:3rem;
+        width:50%;
+        max-width: 30%;
+        border:3px solid  black;
+        color:white;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .logo-content-inner h2{
+        color:white;
+    }
+</style>
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            <span>Coding Creator</span>
+        </div>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="SECOND.HTML">HTML</a></li>
+
+            <li><a href="FIRST.HTML">CSS</a></li>
+
+            <li><a href="third.html">JAVASCRIPT</a></li>
+
+            <li><a href="dbms.html">DBMS</a></li>
+
+
+
+
+
+        </ul>
+    </div>
+</header>
+
+<body>
+    <h1>1. Data Definition Language (DDL)</h1><br>
+DDL changes the structure of the table like creating a table, deleting a table, altering a table, etc.
+All the command of DDL are auto-committed that means it permanently save all the changes in the database.
+Here are some commands that come under DDL:<br>
+
+<h3>CREATE</h3><br>
+<h3>ALTER</h3><br>
+<h3>DROP</h3><br>
+<h3>TRUNCATE</h3><br>
+<h3>a. CREATE:</h3> It is used to create a new table in the database.<br>
+
+<h3>SYNTAX:</h3><br>
+
+CREATE TABLE TABLE_NAME (COLUMN_NAME DATATYPES[,....]); <br> 
+<h3>Example:</h3><br>
+
+CREATE TABLE EMPLOYEE(Name VARCHAR2(20), Email VARCHAR2(100), DOB DATE);<br>  
+<img src="images/create.png" alt="">  <br>
+<h3>b. DROP:</h3> It is used to delete both the structure and record stored in the table.<br>
+
+<h3>SYNTAX:</h3><br>
+
+DROP TABLE table_name;<br>  
+<h3>Example</h3><br>
+
+DROP TABLE EMPLOYEE;<br> 
+<img src="images/drop.png" alt="">  <br> 
+<h3>c. ALTER:</h3> It is used to alter the structure of the database. This change could be either to modify the characteristics of an existing attribute or probably to add a new attribute.<br>
+
+<h3>Syntax:</h3><br>
+
+To add a new column in the table<br>
+
+ALTER TABLE table_name ADD column_name COLUMN-definition;  <br>  
+To modify existing column in the table:<br>
+
+ALTER TABLE table_name MODIFY(column_definitions....);<br>  
+<h3>EXAMPLE</h3><br>
+
+ALTER TABLE STU_DETAILS ADD(ADDRESS VARCHAR2(20));<br>  
+ALTER TABLE STU_DETAILS MODIFY (NAME VARCHAR2(20));  <br>
+<img src="images/alter.png" alt="">  <br>
+<h3>d. TRUNCATE:</h3> It is used to delete all the rows from the table and free the space containing the table.<br>
+
+<h3>Syntax:</h3><br>
+
+TRUNCATE TABLE table_name;<br>  
+<h3>Example:</h3><br>
+
+TRUNCATE TABLE EMPLOYEE;<br>  
+<img src="images/trunc.png" alt="">  <br>
+</body>
+</html>

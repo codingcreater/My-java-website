@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height:70px;
+        align-items: center;
+        background-color:black;
+        color:white;
+    }
+    .header-inner {
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border:0 2px solid white;
+        height: 60px;
+    
+    }
+    .header-inner ul{
+        list-style: none;
+        display: flex;
+
+    }
+
+    .logo span{
+        font-size: 2rem;
+    }
+
+    .header-inner ul li{
+        padding:1rem;
+    
+        
+    }
+
+    li a{
+        
+        padding:1rem;
+        text-decoration: none;
+        color:white;
+    }
+
+    li a:hover{
+        color:blueviolet
+    }
+
+    .logo-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    
+
+    }
+
+    .logo-content-inner{
+        padding:3rem;
+        width:50%;
+        max-width: 30%;
+        border:3px solid  black;
+        color:white;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .logo-content-inner h2{
+        color:white;
+    }
+</style>
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            <span>Coding Creator</span>
+        </div>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="SECOND.HTML">HTML</a></li>
+
+            <li><a href="FIRST.HTML">CSS</a></li>
+
+            <li><a href="third.html">JAVASCRIPT</a></li>
+
+            <li><a href="dbms.html">DBMS</a></li>
+
+
+
+
+
+        </ul>
+    </div>
+</header>
+
+<body>
+    <h1>Procedures</h1><br>
+    In this chapter, we will discuss Procedures in PL/SQL. A subprogram is a program unit/module that performs a particular task. These subprograms are combined to form larger programs. This is basically called the 'Modular design'. A subprogram can be invoked by another subprogram or program which is called the calling program.<br>
+
+A subprogram can be created −<br>
+
+At the schema level<br>
+Inside a package<br>
+Inside a PL/SQL block<br>
+At the schema level, subprogram is a standalone subprogram. It is created with the CREATE PROCEDURE or the CREATE FUNCTION statement. It is stored in the database and can be deleted with the DROP PROCEDURE or DROP FUNCTION statement.<br>
+
+A subprogram created inside a package is a packaged subprogram. It is stored in the database and can be deleted only when the package is deleted with the DROP PACKAGE statement. We will discuss packages in the chapter 'PL/SQL - Packages'.<br>
+
+PL/SQL subprograms are named PL/SQL blocks that can be invoked with a set of parameters. PL/SQL provides two kinds of subprograms −<br>
+
+Functions − These subprograms return a single value; mainly used to compute and return a value.<br>
+
+Procedures − These subprograms do not return a value directly; mainly used to perform an action.<br>
+
+<h3>Creating a Procedure</h3><br>
+A procedure is created with the CREATE OR REPLACE PROCEDURE statement. The simplified syntax for the CREATE OR REPLACE PROCEDURE statement is as follows −<br>
+
+CREATE [OR REPLACE] PROCEDURE procedure_name <br>
+[(parameter_name [IN | OUT | IN OUT] type [, ...])] <br>
+{IS | AS} <br>
+BEGIN <br>
+  < procedure_body > <br> 
+END procedure_name; <br>
+Where,<br>
+
+procedure-name specifies the name of the procedure.<br>
+
+[OR REPLACE] option allows the modification of an existing procedure.<br>
+
+The optional parameter list contains name, mode and types of the parameters. IN represents the value that will be passed from outside and OUT represents the parameter that will be used to return a value outside of the procedure.<br>
+
+procedure-body contains the executable part.<br>
+
+The AS keyword is used instead of the IS keyword for creating a standalone procedure.<br>
+
+<h3>Example</h3><br>
+<img src="images/procedures.png" alt="">  <br>
+</body>
+</html>

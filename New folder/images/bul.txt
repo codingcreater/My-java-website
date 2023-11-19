@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css.css">
+        <body>
+            <div class="menubar">
+                <ul>
+                    <li class="hm"> <a href="#">Home</a>
+                    <div class="submenu1">
+                        <ul>
+                            <li> <a href="#">New</a></li>
+                            <li> <a href="#">Save</a></li>
+                            <li> <a href="#">Open</a></li>
+                        </ul>
+
+                    </div>
+
+
+
+                    </li>
+                    <li> <a href="#">HTML</a>
+                        <div class="submenu1">
+                            <ul>
+                                <li> <details class="dt"> <summary>Anchor tag</summary>
+                                    <summary> <a href="">program 1</a></summary>
+                                    <summary> <a href="">program 2</a></summary> </a> </details></li>
+                                    <li> <details> <summary> Heading tag </summary>
+                                        <summary> <a href="">program 1</a></summary>
+                                        <summary> <a href="">program 2</a></summary> </a> </details></li>
+
+                                        <li> <details> <summary>List tag</summary>
+                                            <summary> <a href="">program 1</a></summary>
+                                            <summary> <a href="">program 2</a></summary> </a> </details></li>
+                                        </li>
+                </ul>
+
+            </div>
+        </li>
+        <li> <a href="#">CSS</a>
+            <div class="submenu1">
+                <ul>
+                    <li> <a href="#">HTML</a></li>
+                    <li> <a href="#">HTML</a></li>
+                    <li> <a href="#">HTML</a></li>
+                </ul>
+
+            </div>
+            </li>
+            <li> <a href="#">JAVASCRIPT</a>
+                <div class="submenu1">
+                    <ul>
+                        <li> <a href="#">HTML</a></li>
+                        <li> <a href="#">HTML</a></li>
+                        <li> <a href="#">HTML</a></li>
+                    </ul>
+
+                </div>
+                </li>
+                <li> <a href="#">Contact Us</a>
+                    <div class="submenu1">
+                        <ul>
+                            <li> <a href="#">HTML</a></li>
+                            <li> <a href="#">HTML</a></li>
+                            <li> <a href="#">HTML</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li> <a href="#">Know More</a>
+                <div class="submenu1">
+                    <ul>
+                        <li> <a href="#">HTML</a></li>
+                            <li> <a href="#">HTML</a></li>
+                            <li> <a href="#">HTML</a></li>
+                    </ul>
+
+                </div>
+                </li>
+            </ul>
+        </div>
+        <div class="tile">
+            <h1>Coding Creator</h1>
+        </div>
+        
+        </body>
+    </head>
+</html>

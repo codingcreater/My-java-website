@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>output</title>
+</head>
+<body>
+    code
+    <p>
+
+class Arr2 {<br>
+
+    public static void main(String[] args) {<br>
+
+        int a[][] = {<br>
+                { 1, 2, 4, 5 },<br>
+                { 6, 7, 8, 9 },<br>
+                { 10, 11, 12, 13 }<br>
+        };<br>
+
+        int rows = a.length;<br>
+        int columns = a[0].length;<br>
+        int transpose[][] = new int[columns][rows];<br>
+
+        System.out.println("_____________Printing matrix__________________");<br>
+        for (int i = 0; i < rows; i++) {<br>
+            for (int j = 0; j < columns; j++) {<br>
+                System.out.print("   " + a[i][j]);<br>
+                transpose[j][i] = a[i][j];<br>
+            }<br>
+            System.out.println("\n");<br>
+        }<br>
+
+        System.out.println("_____________Printing Transpose matrix__________________");<br>
+
+        for (int i = 0; i < columns; i++) {<br>
+            for (int j = 0; j < rows; j++) {<br>
+
+                System.out.print("  " + transpose[i][j]);<br>
+
+            }<br>
+            System.out.println("\n");<br>
+        }<br>
+
+    }<br>
+
+}<br>
+<br>
+</p>
+<br>
+output<br>
+<img src="javapro/javapro/2D array/2Darray_10_7044.png">
+</body>

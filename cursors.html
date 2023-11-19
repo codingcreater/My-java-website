@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height:70px;
+        align-items: center;
+        background-color:black;
+        color:white;
+    }
+    .header-inner {
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border:0 2px solid white;
+        height: 60px;
+    
+    }
+    .header-inner ul{
+        list-style: none;
+        display: flex;
+
+    }
+
+    .logo span{
+        font-size: 2rem;
+    }
+
+    .header-inner ul li{
+        padding:1rem;
+    
+        
+    }
+
+    li a{
+        
+        padding:1rem;
+        text-decoration: none;
+        color:white;
+    }
+
+    li a:hover{
+        color:blueviolet
+    }
+
+    .logo-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    
+
+    }
+
+    .logo-content-inner{
+        padding:3rem;
+        width:50%;
+        max-width: 30%;
+        border:3px solid  black;
+        color:white;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .logo-content-inner h2{
+        color:white;
+    }
+</style>
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            <span>Coding Creator</span>
+        </div>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="SECOND.HTML">HTML</a></li>
+
+            <li><a href="FIRST.HTML">CSS</a></li>
+
+            <li><a href="third.html">JAVASCRIPT</a></li>
+
+            <li><a href="dbms.html">DBMS</a></li>
+
+
+
+
+
+        </ul>
+    </div>
+</header>
+
+<body>
+    <h1><u>Cursors</u></h1><br>
+    In this chapter, we will discuss the cursors in PL/SQL. Oracle creates a memory area, known as the context area, for processing an SQL statement, which contains all the information needed for processing the statement; for example, the number of rows processed, etc.<br>
+
+    A cursor is a pointer to this context area. PL/SQL controls the context area through a cursor. A cursor holds the rows (one or more) returned by a SQL statement. The set of rows the cursor holds is referred to as the active set.<br>
+    
+    You can name a cursor so that it could be referred to in a program to fetch and process the rows returned by the SQL statement, one at a time. There are two types of cursors −<br>
+    
+    Implicit cursors<br>
+    Explicit cursors<br>
+    <h2>Implicit Cursors</h2><br>
+    Implicit cursors are automatically created by Oracle whenever an SQL statement is executed, when there is no explicit cursor for the statement. Programmers cannot control the implicit cursors and the information in it.<br>
+    
+    Whenever a DML statement (INSERT, UPDATE and DELETE) is issued, an implicit cursor is associated with this statement. For INSERT operations, the cursor holds the data that needs to be inserted. For UPDATE and DELETE operations the cursor identifies the rows that would be affected.<br>
+
+    <h3>Example</h3><br>
+    <img src="images/imp.png" alt="">  <br>
+
+    <h2>Explicit Cursors</h2><br>
+
+Explicit cursors are programmer-defined cursors for gaining more control over the context area. An explicit cursor should be defined in the declaration section of the PL/SQL Block. It is created on a SELECT Statement which returns more than one row.<br>
+The syntax for creating an explicit cursor is -<br>
+CURSOR cursor_name IS select_statement;<br>
+Working with an explicit cursor includes the following steps -<br>
+Declaring the cursor for initializing the memory<br>
+Opening the cursor for allocating the memory<br>
+Fetching the cursor for retrieving the data<br>
+Closing the cursor to release the allocated memory<br>
+Declaring the Cursor<br>
+Declaring the cursor defines the cursor with a name and the associated SELECT statement. For example -<br>
+CURSOR c_customers IS<br>
+SELECT id, name, address FROM customers;<br>
+Opening the Cursor<br>
+Opening the cursor allocates the memory for the cursor and makes it ready for fetching the rows returned by the SQL statement into it. For example, we will open the above defined cursor as follows -<br>
+OPEN c_customers;<br>
+Fetching the Cursor<br>
+Fetching the cursor involves accessing one row at a time. For example, we will fetch rows from the above-opened cursor as follows -<br>
+FETCH c_customers INTO c_id, c_name, c_addr;<br>
+Closing the Cursor<br>
+Closing the cursor means releasing the allocated memory.<br>
+For example, we will close the above-opened cursor as follows -<br>
+CLOSE c_customers;<br>
+<img src="images/exp.png" alt="">  <br>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height:70px;
+        align-items: center;
+        background-color:black;
+        color:white;
+    }
+    .header-inner {
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border:0 2px solid white;
+        height: 60px;
+    
+    }
+    .header-inner ul{
+        list-style: none;
+        display: flex;
+
+    }
+
+    .logo span{
+        font-size: 2rem;
+    }
+
+    .header-inner ul li{
+        padding:1rem;
+    
+        
+    }
+
+    li a{
+        
+        padding:1rem;
+        text-decoration: none;
+        color:white;
+    }
+
+    li a:hover{
+        color:blueviolet
+    }
+
+    .logo-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    
+
+    }
+
+    .logo-content-inner{
+        padding:3rem;
+        width:50%;
+        max-width: 30%;
+        border:3px solid  black;
+        color:white;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .logo-content-inner h2{
+        color:white;
+    }
+</style>
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            <span>Coding Creator</span>
+        </div>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="SECOND.HTML">HTML</a></li>
+
+            <li><a href="FIRST.HTML">CSS</a></li>
+
+            <li><a href="third.html">JAVASCRIPT</a></li>
+
+            <li><a href="dbms.html">DBMS</a></li>
+
+
+
+
+
+        </ul>
+    </div>
+</header>
+
+   
+<body>
+    <h1>Basic Syntax</h1><br>
+    In this chapter, we will discuss the Basic Syntax of PL/SQL which is a block-structured language; this means that the PL/SQL programs are divided and written in logical blocks of code. Each block consists of three sub-parts<br>
+
+<h3>1.Declarations</h3><br>
+This section starts with the keyword DECLARE. It is an optional section and defines all variables, cursors, subprograms, and other elements to be used in the program.<br>
+
+<h3>2.Executable Commands</h3><br>
+This section is enclosed between the keywords BEGIN and END and it is a mandatory section. It consists of the executable PL/SQL statements of the program. It should have at least one executable line of code, which may be just a NULL command to indicate that nothing should be executed.<br>
+
+<h3>3.Exception Handling</h3><br>
+This section starts with the keyword EXCEPTION. This optional section contains exception(s) that handle errors in the program.<br>
+
+Every PL/SQL statement ends with a semicolon (;). PL/SQL blocks can be nested within other PL/SQL blocks using BEGIN and END. Following is the basic structure of a PL/SQL block −<br>
+
+DECLARE <br>
+   <declarations section><br> 
+BEGIN <br>
+   <executable command(s)><br>
+EXCEPTION <br>
+   <exception handling> <br>
+END;<br>
+The 'Hello World' Example<br>
+DECLARE <br>
+   message  varchar2(20):= 'Hello, World!';<br> 
+BEGIN <br>
+   dbms_output.put_line(message);<br> 
+END; <br>
+/ <br>
+The end; line signals the end of the PL/SQL block. To run the code from the SQL command line, you may need to type / at the beginning of the first blank line after the last line of the code. When the above code is executed at the SQL prompt, it produces the following result −<br>
+
+Hello World  <br>
+
+PL/SQL procedure successfully completed.<br>
+The PL/SQL Identifiers<br>
+PL/SQL identifiers are constants, variables, exceptions, procedures, cursors, and reserved words. The identifiers consist of a letter optionally followed by more letters, numerals, dollar signs, underscores, and number signs and should not exceed 30 characters.<br>
+
+By default, identifiers are not case-sensitive. So you can use integer or INTEGER to represent a numeric value. You cannot use a reserved keyword as an identifier.<br>
+</body>
+</html>
+</body>
+</html>

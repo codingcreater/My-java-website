@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>output</title>
+</head>
+<body>
+    code
+    <p>
+        class exception6{<br>
+    static class MyException extends Exception{<br>
+        MyException(String msg){<br>
+            super(msg);<br>
+        }<br>
+    }<br>
+
+    public static void main(String arg[]) throws java.io.IOException, exception6.MyException{<br>
+        java.io.BufferedReader input = new java.io.BufferedReader (new java.io.InputStreamReader(System.in));<br>
+        // declare hashmap<br>
+        java.util.HashMap<Integer, Boolean> map = new java.util.HashMap<Integer, Boolean>();<br>
+
+        try{<br>
+            System.out.print("Enter non repeating numbers : ");<br>
+            String[] list = input.readLine().split(" ");<br>
+            
+            for(String st : list){<br>
+                int num = Integer.parseInt(st);<br>
+                if(map.containsKey(num)){<br>
+                    String err = num + " is repeated in the list";<br>
+                    throw new exception6.MyException(err);<br>
+                } else {<br>
+                    map.put(num, true);<br>
+                }<br>
+            }<br>
+            
+        } catch(java.lang.NumberFormatException e){<br>
+            System.out.println("Invalid input. Please enter a valid number.");<br>
+        }<br>
+    }<br>
+        }<br>
+<br>
+</p>
+<br>
+output<br>
+<img src="javapro (1)/javapro/Exception handling/7055exceptionHandling5.png">
+</body>

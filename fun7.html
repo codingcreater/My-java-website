@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>output</title>
+</head>
+<body>
+    code
+    <p>
+        import java.util.Scanner;<br>
+
+ class Password {<br>
+    
+public static final int PASSWORD_LENGTH = 8;<br>
+
+public static void main(String[] args) {<br>
+
+        Scanner input = new Scanner(System.in);<br>
+        System.out.print(<br>
+                "1. A password must have at least eight characters.\n" +
+                "2. A password consists of only letters and digits.\n" +
+                "3. A password must contain at least two digits \n" +
+                "Input a password (You are agreeing to the above Terms and Conditions.): ");
+        String s = input.nextLine();
+
+        if (is_Valid_Password(s)) {
+            System.out.println("Password is valid: " + s);
+        } else {
+            System.out.println("Not a valid password: " + s);
+        }
+
+    }
+
+    public static boolean is_Valid_Password(String password) {<br>
+
+        if (password.length() < PASSWORD_LENGTH) return false;<br>
+<br>
+    <br>    int charCount = 0;
+        int numCount = 0;<br>
+        for (int i = 0; i < password.length(); i++) {
+
+            char ch = password.charAt(i);<br>
+
+            if (is_Numeric(ch)) numCount++;<br>
+            else if (is_Letter(ch)) charCount++;<br>
+            else return false;<br>
+        }<br>
+
+
+        return (charCount >= 2 && numCount >= 2);
+    }
+
+    public static boolean is_Letter(char ch) {
+        ch = Character.toUpperCase(ch);
+        return (ch >= 'A' && ch <= 'Z');
+    }
+
+
+    public static boolean is_Numeric(char ch) {
+
+        return (ch >= '0' && ch <= '9');
+    }
+
+}
+
+</p>
+<br>
+output<br>
+<img src="javapro (1)/javapro/Functions/7102function7.png">
+</body>

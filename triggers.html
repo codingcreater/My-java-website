@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height:70px;
+        align-items: center;
+        background-color:black;
+        color:white;
+    }
+    .header-inner {
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border:0 2px solid white;
+        height: 60px;
+    
+    }
+    .header-inner ul{
+        list-style: none;
+        display: flex;
+
+    }
+
+    .logo span{
+        font-size: 2rem;
+    }
+
+    .header-inner ul li{
+        padding:1rem;
+    
+        
+    }
+
+    li a{
+        
+        padding:1rem;
+        text-decoration: none;
+        color:white;
+    }
+
+    li a:hover{
+        color:blueviolet
+    }
+
+    .logo-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    
+
+    }
+
+    .logo-content-inner{
+        padding:3rem;
+        width:50%;
+        max-width: 30%;
+        border:3px solid  black;
+        color:white;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .logo-content-inner h2{
+        color:white;
+    }
+</style>
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            <span>Coding Creator</span>
+        </div>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="SECOND.HTML">HTML</a></li>
+
+            <li><a href="FIRST.HTML">CSS</a></li>
+
+            <li><a href="third.html">JAVASCRIPT</a></li>
+
+            <li><a href="dbms.html">DBMS</a></li>
+
+
+
+
+
+        </ul>
+    </div>
+</header>
+
+<body>
+    <h1>Triggers</h1><br>
+    In this chapter, we will discuss Triggers in PL/SQL. Triggers are stored programs, which are automatically executed or fired when some events occur. Triggers are, in fact, written to be executed in response to any of the following events −<br>
+
+A database manipulation (DML) statement (DELETE, INSERT, or UPDATE)<br>
+
+A database definition (DDL) statement (CREATE, ALTER, or DROP).<br>
+
+A database operation (SERVERERROR, LOGON, LOGOFF, STARTUP, or SHUTDOWN).<br>
+
+Triggers can be defined on the table, view, schema, or database with which the event is associated.<br>
+
+<h3>Benefits of Triggers</h3><br>
+Triggers can be written for the following purposes −<br>
+
+Generating some derived column values automatically<br>
+Enforcing referential integrity<br>
+Event logging and storing information on table access<br>
+Auditing<br>
+Synchronous replication of tables<br>
+Imposing security authorizations<br>
+Preventing invalid transactions<br>
+<h3>Creating Triggers</h3><br>
+The syntax for creating a trigger is −<br>
+
+CREATE [OR REPLACE ] TRIGGER trigger_name <br> 
+{BEFORE | AFTER | INSTEAD OF }  <br>
+{INSERT [OR] | UPDATE [OR] | DELETE}<br>  
+[OF col_name]  <br>
+ON table_name  <br>
+[REFERENCING OLD AS o NEW AS n]<br>  
+[FOR EACH ROW]  <br>
+WHEN (condition)   <br>
+DECLARE <br>
+   Declaration-statements<br> 
+BEGIN  <br>
+   Executable-statements<br> 
+EXCEPTION <br>
+   Exception-handling-statements<br> 
+END; <br>
+Where,<br>
+
+CREATE [OR REPLACE] TRIGGER trigger_name − Creates or replaces an existing trigger with the trigger_name.<br>
+
+{BEFORE | AFTER | INSTEAD OF} − This specifies when the trigger will be executed. The INSTEAD OF clause is used for creating trigger on a view.<br>
+
+{INSERT [OR] | UPDATE [OR] | DELETE} − This specifies the DML operation.<br>
+
+[OF col_name] − This specifies the column name that will be updated.<br>
+
+[ON table_name] − This specifies the name of the table associated with the trigger.<br>
+
+[REFERENCING OLD AS o NEW AS n] − This allows you to refer new and old values for various DML statements, such as INSERT, UPDATE, and DELETE.<br>
+
+[FOR EACH ROW] − This specifies a row-level trigger, i.e., the trigger will be executed for each row being affected. Otherwise the trigger will execute just once when the SQL statement is executed, which is called a table level trigger.<br>
+
+WHEN (condition) − This provides a condition for rows for which the trigger would fire. This clause is valid only for row-level triggers.<br>
+
+<h3>Example</h3><br>
+<img src="images/triggers.png" alt="">  <br>
+</body>
+</html>

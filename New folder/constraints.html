@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height:70px;
+        align-items: center;
+        background-color:black;
+        color:white;
+    }
+    .header-inner {
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border:0 2px solid white;
+        height: 60px;
+    
+    }
+    .header-inner ul{
+        list-style: none;
+        display: flex;
+
+    }
+
+    .logo span{
+        font-size: 2rem;
+    }
+
+    .header-inner ul li{
+        padding:1rem;
+    
+        
+    }
+
+    li a{
+        
+        padding:1rem;
+        text-decoration: none;
+        color:white;
+    }
+
+    li a:hover{
+        color:blueviolet
+    }
+
+    .logo-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    
+
+    }
+
+    .logo-content-inner{
+        padding:3rem;
+        width:50%;
+        max-width: 30%;
+        border:3px solid  black;
+        color:white;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .logo-content-inner h2{
+        color:white;
+    }
+</style>
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            <span>Coding Creator</span>
+        </div>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="SECOND.HTML">HTML</a></li>
+
+            <li><a href="FIRST.HTML">CSS</a></li>
+
+            <li><a href="third.html">JAVASCRIPT</a></li>
+
+            <li><a href="dbms.html">DBMS</a></li>
+
+
+
+
+
+        </ul>
+    </div>
+</header>
+
+
+
+<body>
+    <h1 style="text-align: center;"><u>SQL Constraints</u></h1><br>
+    Constraints are the rules that we can apply on the type of data in a table. That is, we can specify the limit on the type of data that can be stored in a particular column in a table using constraints. <br>
+<h4>SYNTAX:</h4><br>
+CREATE TABLE sample_table<br>
+(<br>
+column1 data_type(size) constraint_name,<br>
+column2 data_type(size) constraint_name,<br>
+column3 data_type(size) constraint_name,<br>
+....<br>
+);<br>
+
+sample_table: Name of the table to be created.<br>
+data_type: Type of data that can be stored in the field.<br>
+constraint_name: Name of the constraint. for example- NOT NULL, UNIQUE, PRIMARY KEY etc.<br>
+The available constraints in SQL are: <br>
+ 
+
+<h3> NULL:</h3> This constraint tells that we cannot store a null value in a column. That is, if a column is specified as NOT NULL then we will not be able to store null in this particular column any more.<br>
+<h4>SYNTAX:</h4><br>
+CREATE TABLE Student<br>
+(<br>
+ID int(6) NOT NULL,<br>
+NAME varchar(10) NOT NULL,<br>
+ADDRESS varchar(20)<br>
+);<br>
+<h3>UNIQUE:</h3> This constraint when specified with a column, tells that all the values in the column must be unique. That is, the values in any row of a column must not be repeated.<br>
+<h4>SYNTAX:</h4><br>
+CREATE TABLE Student<br>
+(<br>
+ID int(6) NOT NULL UNIQUE,<br>
+NAME varchar(10),<br>
+ADDRESS varchar(20)<br>
+);<br>
+<img src="images/notnull.png" alt="">  <br>
+<h3>PRIMARY KEY:</h3> A primary key is a field which can uniquely identify each row in a table. And this constraint is used to specify a field in a table as primary key.<br>
+<h4>SYNTAX:</h4><br>
+CREATE TABLE Student<br>
+(<br>
+ID int(6) NOT NULL UNIQUE,<br>
+NAME varchar(10),<br>
+ADDRESS varchar(20)<br>
+);<br>
+<img src="images/primary.png" alt="">  <br>
+<h3>FOREIGN KEY:</h3> A Foreign key is a field which can uniquely identify each row in a another table. And this constraint is used to specify a field as Foreign key.<br>
+Orders<br>
+O_ID	ORDER_NO	C_ID<br>
+1	2253	3<br>
+2	3325	3<br>
+3	4521	2<br>
+4	8532	1<br>
+ 
+Customers<br>
+C_ID	NAME	ADDRESS<br>
+1	RAMESH	DELHI<br>
+2	SURESH	NOIDA<br>
+3	DHARMESH	GURGAON<br>
+As we can see clearly that the field C_ID in Orders table is the primary key in Customers table, i.e. it uniquely identifies each row in the Customers table. Therefore, it is a Foreign Key in Orders table. <br>
+ 
+<h4>SYNTAX:</h4><br>
+CREATE TABLE Orders<br>
+(<br>
+O_ID int NOT NULL,<br>
+ORDER_NO int NOT NULL,<br>
+C_ID int,<br>
+PRIMARY KEY (O_ID),<br>
+FOREIGN KEY (C_ID) REFERENCES Customers(C_ID)<br>
+)<br>
+<h3>CHECK:</h3> This constraint helps to validate the values of a column to meet a particular condition. That is, it helps to ensure that the value stored in a column meets a specific condition.<br>
+<img src="images/check.png" alt="">  <br>
+<h3>DEFAULT:</h3> This constraint specifies a default value for the column when no value is specified by the user.<br>
+<h4>SYNTAX:</h4><br>
+CREATE TABLE Student<br>
+(<br>
+ID int(6) NOT NULL,<br>
+NAME varchar(10) NOT NULL,<br>
+AGE int DEFAULT 18<br>
+);<br>
+<img src="images/default.png" alt="">  <br>
+
+</body>
+</html>

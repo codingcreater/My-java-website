@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../css.css">
+</head>
+<body>
+ <button onclick="celsiusTFa(100)">Click me</button>
+ <p id="demo"></p>
+  <script>
+function celsiusTFa(cels){
+ let temp=cels;
+ let result;
+ result=(temp*9/5+32)
+ document.getElementById("demo").innerHTML=`${temp} celsius equal to : ${result} fahrenheit`;
+}
+</script>  
+</body>
+</html>

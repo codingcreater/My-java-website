@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <title>output</title>
+</head>
+<body>
+    code
+    <p>
+        /*
+ * 
+ * Write a Java method that checks whether all the characters in a given string are vowels (a, e,i,o,u) or not. Return true if each character in the string is a vowel, otherwise return false.
+*/<br>
+
+class Test<br>
+{<br>
+    static boolean isVowel(char c)<br>
+    {<br>
+        if (c == 'a')<br>
+        {<br>
+            return true;<br>
+        }<br>
+        else if (c == 'a')<br>
+        {<br>
+            return true;<br>
+        }<br>
+        else if (c == 'u')<br>
+        {<br>
+            return true;<br>
+        }<br>
+        else if (c == 'e')<br>
+        {<br>
+            return true;<br>
+        }<br>
+        else if (c == 'i')<br>
+        {<br>
+            return true;<br>
+        }<br>
+        else if (c == 'o')<br>
+        {<br>
+            return true;<br>
+        }<br>
+        else<br>
+        {<br>
+            return false;<br>
+        }<br>
+    }<br>
+
+    static boolean isStringInsideVowel(String line)
+    {
+        for (int i = 0; i < line.length(); i++)
+        {
+            if(isVowel(line.charAt(i)))
+            {
+                return true;
+            }<br>
+        }
+        return false;
+    }
+
+    public static void main(String args[])
+    {
+<br>
+        System.out.println(Test.isStringInsideVowel("hello"));
+                System.out.println(Test.isStringInsideVowel("kmnpdk"));
+    }
+}<br>
+</p>
+<br>
+output<br>
+<img src="javapro (1)/javapro/Functions/function3_7019.png">
+</body>

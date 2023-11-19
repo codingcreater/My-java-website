@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>output</title>
+</head>
+<body>
+    code
+    <p>
+        import java.io.File;<br>
+import java.io.FileNotFoundException;<br>
+import java.util.Scanner;<br>
+ 
+class Read_File {<br>
+  public static void main(String x[] ) {<br>
+    try {<br>
+      r_File("test2.txt");<br>
+    } catch (FileNotFoundException e) {<br>
+      System.out.println("Exception: " + e.getMessage());<br>
+    }<br>
+  }<br>
+
+  public static void r_File(String fname) throws FileNotFoundException {<br>
+    File file = new File(fname);<br>
+    Scanner scanner = new Scanner(file);<br>
+
+
+    while (scanner.hasNextLine()) {<br>
+      String line = scanner.nextLine();<br>
+      System.out.println(line);<br>
+    }<br>
+
+    scanner.close();<br>
+  }<br>
+}<br>
+<br>
+</p>
+<br>
+output<br>
+<img src="javapro (1)/javapro/Exception handling/7083Exceptionhandling3.png">
+</body>

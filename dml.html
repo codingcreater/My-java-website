@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height:70px;
+        align-items: center;
+        background-color:black;
+        color:white;
+    }
+    .header-inner {
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border:0 2px solid white;
+        height: 60px;
+    
+    }
+    .header-inner ul{
+        list-style: none;
+        display: flex;
+
+    }
+
+    .logo span{
+        font-size: 2rem;
+    }
+
+    .header-inner ul li{
+        padding:1rem;
+    
+        
+    }
+
+    li a{
+        
+        padding:1rem;
+        text-decoration: none;
+        color:white;
+    }
+
+    li a:hover{
+        color:blueviolet
+    }
+
+    .logo-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    
+
+    }
+
+    .logo-content-inner{
+        padding:3rem;
+        width:50%;
+        max-width: 30%;
+        border:3px solid  black;
+        color:white;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .logo-content-inner h2{
+        color:white;
+    }
+</style>
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            <span>Coding Creator</span>
+        </div>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="SECOND.HTML">HTML</a></li>
+
+            <li><a href="FIRST.HTML">CSS</a></li>
+
+            <li><a href="third.html">JAVASCRIPT</a></li>
+
+            <li><a href="dbms.html">DBMS</a></li>
+
+
+
+
+
+        </ul>
+    </div>
+</header>
+
+<body>
+    <h1>2. Data Manipulation Language</h1><br>
+DML commands are used to modify the database. It is responsible for all form of changes in the database.
+The command of DML is not auto-committed that means it can't permanently save all the changes in the database. They can be rollback.<br>
+Here are some commands that come under DML:<br>
+
+<h3>INSERT</h3><br>
+<h3>UPDATE</h3><br>
+<h3>DELETE</h3><br>
+<h3>a. INSERT:</h3> The INSERT statement is a SQL query. It is used to insert data into the row of a table.<br>
+
+<h3>Syntax:</h3><br>
+
+INSERT INTO TABLE_NAME<br>    
+(col1, col2, col3,.... col N) <br> 
+VALUES (value1, value2, value3, ..0.. valueN);<br>  
+Or<br>
+
+INSERT INTO TABLE_NAME<br>    
+VALUES (value1, value2, value3, .... valueN); <br>   
+<h3>For example:</h3><br>
+
+INSERT INTO javatpoint (Author, Subject) VALUES ("Sonoo", "DBMS");<br> 
+<img src="images/insert.png" alt="">  <br> 
+<h3>b. UPDATE:</h3> This command is used to update or modify the value of a column in the table.<br>
+
+<h3>Syntax:</h3><br>
+
+UPDATE table_name SET [column_name1= value1,...column_nameN = valueN] [WHERE CONDITION] <br>  
+<h3>For example:</h3><br>
+
+UPDATE students    <br>
+SET User_Name = 'Sonoo'<br>    
+WHERE Student_Id = '3'  <br>
+<img src="images/update.png" alt="">  <br>
+<h3>c. DELETE:</h3> It is used to remove one or more row from a table.<br>
+
+<h3>Syntax:</h3><br>
+
+DELETE FROM table_name [WHERE condition];<br>  
+<h3>For example:</h3><br>
+
+DELETE FROM javatpoint  <br>
+WHERE Author="Sonoo";  <br>
+</body>
+</html>

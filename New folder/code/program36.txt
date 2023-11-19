@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <style>
+a{
+    text-transform: uppercase;
+}
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="">Home</a>
+            <button class="">Language</button><i></i>
+            <div>
+                <a href="">HTML</a>
+                <a href="">CSS</a>
+                <a href="">Javascript</a>
+            </div>
+            <a href="">contact us</a>
+            <a href="">about us</a>
+        </div>
+    </body>
+</html>

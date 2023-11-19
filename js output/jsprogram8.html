@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick="Month()">Click</button>
+<p id="demo"></p>
+<script>
+function Month() {
+let mnumber = 8;
+let output;
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+for (let i = 0; i < months.length; i++) {
+output = months[mnumber - 1];
+}
+var days = new Date(2022, mnumber, 0).getDate();
+document.write("Month name :", output);
+document.write("<br> Days : ", days);
+}
+    </script>
+</body>
+</html>

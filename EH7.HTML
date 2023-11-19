@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>output</title>
+</head>
+<body>
+    code
+    <p>
+        import java.util.Scanner;<br>
+
+class vowelchecker<br>
+{<br>
+public static void main(String args[])<br>
+{<br>
+try<br>
+{<br>
+Scanner sc = new Scanner(System.in);<br>
+System.out.print("Enter a String : ");<br>
+String str = sc.nextLine();<br>
+checkForVowels(str);<br>
+System.out.println("String Contains Vowels.");<br>
+}<br>
+catch(NoVowelsException e)<br>
+{<br>
+System.out.println("Exception : "+e.getMessage());<br>
+}<br>
+}<br>
+static void checkForVowels(String input) throws NoVowelsException<br>
+{<br>
+if(!input.matches(".*[AEIOUaeiou].*"))<br>
+{<br>
+throw new NoVowelsException("The Input string does not contains any vowels.");<br>
+}<br>
+}<br>
+}<br>
+class NoVowelsException extends Exception<br>
+{<br>
+public NoVowelsException(String message)<br>
+{<br>
+   super(message);<br>
+}<br>
+}<br>
+<br>
+</p>
+<br>
+output<br>
+<img src="javapro (1)/javapro/Exception handling/7072ExceptionHandling7.png">
+</body>

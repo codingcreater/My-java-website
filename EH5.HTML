@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>output</title>
+</head>
+<body>
+    code
+    <p>
+        // Write a Java program that reads a file and throws an exception if the file is empty.<br>
+import java.io.File;<br>
+import java.io.FileReader;<br>
+import java.io.IOException;<br>
+
+class EmptyFileException extends Exception {<br>
+    public EmptyFileException(String message) {<br>
+        super(message);<br>
+    }<br>
+}<br>
+
+class CheckEmptyFile {<br>
+    public static void main(String[] args) {<br>
+        try {<br>
+            checkFileNotEmpty("data.txt");<br>
+        } catch (EmptyFileException e) {<br>
+            System.out.println("Empty file detected: " + e.getMessage());<br>
+        } catch (IOException e) {<br>
+            System.out.println("File not found or cannot be read: " + e.getMessage());<br>
+        }<br>
+    }<br>
+
+    public static void checkFileNotEmpty(String fileName) throws IOException, EmptyFileException {<br>
+        File file = new File(fileName);<br>
+
+        if (!file.exists() || file.length() == 0) {<br>
+            throw new EmptyFileException("File is empty or does not exist.");<br>
+        }<br>
+
+        FileReader reader = new FileReader(file);<br>
+        reader.close();<br>
+    }<br>
+}<br>
+<br>
+</p>
+<br>
+output<br>
+<img src="javapro (1)/javapro/Exception handling/7055exceptionHandling5.png">
+</body>

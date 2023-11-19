@@ -1,0 +1,19 @@
+<html >
+<head>
+</head>
+<body>
+<button onclick="Triangle()">Click</button>
+<p id="demo"></p>
+<script>
+function Triangle(){
+let a1=5 , a2=6 , a3=7;
+let r=(a1+a2+a3)/2;
+let area=Math.sqrt(r*(r-a1)*(r-a2)*(r-a3));
+document.getElementById("demo").innerHTML=`Area of 3 sides ${a1},${a2} ,${a3} triangle = ${area.toFixed(3)}`;
+}
+</script>
+</body>
+</html>
+</script>
+</body>
+</html>

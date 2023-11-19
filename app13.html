@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>output</title>
+</head>
+<body>
+    code
+    <p>
+        import java.awt.*;    <br>
+import java.applet.*;    <br>
+    public class pro13 extends Applet<br>    
+ {    <br>
+   Font f1,f2,f3;<br>    
+    
+   public void  init()<br>    
+    {    <br>
+       f1 = new Font("Arial",Font.BOLD,18);<br>    
+       f2 = new Font("Forte",Font.PLAIN,24);   <br> 
+       f3 = new Font("Elephant",Font.ITALIC,28);   <br> 
+    }    <br>
+          
+   public void  paint(Graphics g)<br>    
+   {    <br>
+      g.drawString("Welcome",50,50);<br>    
+    
+      g.setFont(f1);     <br>
+      g.drawString("to ",50,80);<br>    
+    
+      g.setFont(f2);     <br>
+      g.drawString("My ",50,110);<br>    
+    
+      g.setFont(f3);     <br>
+      g.drawString("Website",50,140);<br>    
+   }    <br>
+ }    <br>
+    
+/* <applet code = "pro13" height = 500 width =500>  <br>
+   </applet> */<br>
+    </p>
+    <br>
+    output<br>
+    <img src="javapro (1)/javapro/applets/j13.png">
+</body>

@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick="getUrl()">Click</button>
+<p id="demo"></p>
+<script>
+function getUrl(){
+var url=document.URL;
+document.getElementById("demo").innerHTML=url;
+}
+</script>
+</body>
+</html>

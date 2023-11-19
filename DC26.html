@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>output</title>
+</head>
+<body>
+    code
+    <p>
+        
+//How to convert Decimal to Binary<br>
+
+
+
+class DecimalToBinary {<br>
+   public static void main(String[] args) {<br>
+       int decimalNumber =9;<br>
+       
+      
+       StringBuilder binary = new StringBuilder();<br>
+       
+       if (decimalNumber == 0) {<br>
+           binary.append(0);<br>
+       } else {<br>
+           
+           while (decimalNumber > 0) {<br>
+               int remainder = decimalNumber % 2;<br>
+               binary.insert(0, remainder);<br>
+               decimalNumber = decimalNumber / 2;<br>
+           }<br>
+       }<br>
+       
+       System.out.println("Binary representation: "+ binary.toString());<br>
+   }<br>
+}<br>
+
+
+
+
+    </p>
+    <br>
+    output<br>
+    <img src="javapro (1)/javapro/data conversion/dc26.png">
+</body>

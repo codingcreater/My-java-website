@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>output</title>
+</head>
+<body>
+    code
+    <p>
+        class CharacterPrinter {<br>
+            static void printCharactersBetween(char startChar, char endChar) {<br>
+               if (startChar > endChar) {<br>
+                   char temp = startChar;<br>
+                   startChar = endChar;<br>
+                   endChar = temp;<br>
+               }<br>
+       
+               for (char ch = startChar; ch < endChar; ch++) {<br>
+                   System.out.print(ch + " ");<br>
+               }<br>
+               System.out.println(endChar); 
+            }<br>
+       
+           public static void main(String[] args) {
+               char startChar = 'A';<br>
+               char endChar = 'F';<br>
+       
+               System.out.println("Characters between " + startChar + " and " + endChar + ":");
+               printCharactersBetween(startChar, endChar);<br>
+           }<br>
+        }<br>
+       
+</p>
+<br>
+output<br>
+<img src="javapro (1)/javapro/Functions/Functions6_7100.png">
+</body>

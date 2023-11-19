@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+.bar{
+    font-size: 20px;
+    padding: 20px;
+    
+}
+.left{
+    padding-left: 10%;
+}
+a{
+    padding: 8px;
+    color: rgb(163,163,163);
+}
+.right1{
+    padding-left: 45%;
+}
+.bar2{
+font-size: 20px;
+padding: 5px;
+}
+img{
+    width: 40px;
+    height: 40px;
+    display: inline;
+}   
+p{
+    font-size: 40px;
+    padding: 5px;
+    display: inline-block;
+} </style>
+    </head>
+    <body>
+        <div class="header">
+            <nav class="bar">
+                <div class="left">
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-twiter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </nav>
+            <hr>
+            <nav class="bar2">
+                <div class="left1">
+                    <img src="images/pose.jpeg" ><p>Poseiden</p>
+                </div>
+<div class="right1">
+    <a href="#">HOME</a>
+    <a href="#">PRODUCT</a>
+    <a href="#">ABOUT US</a>
+    <a href="#">CONTACT US</a>
+    <a href="#"><i class="fa fa-search"></i></a>
+</div>
+            </nav>
+        </div>
+        <br>
+        <div class="div1">
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick="Multiplecheck()">Click</button>
+<p id="demo"></p>
+<script>
+function Multiplecheck(){       
+let number=21;
+let result;
+if(number%3==0 || number%7==0){
+res=`${number} is a multiple of 3 or 7`;
+}
+else{
+res=`${number} is not a multiple of 3 or 7`;
+}
+document.getElementById("demo").innerHTML=res;
+}
+ </script>
+</body>
+</html>

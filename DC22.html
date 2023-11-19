@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>output</title>
+</head>
+<body>
+    code
+    <p>
+        import java.util.Scanner;<br>
+
+class booleantostring {<br>
+    public static void main(String[] a) {<br>
+        Scanner s = new Scanner(System.in);<br>
+
+        System.out.print("Enter a boolean value (true or false): ");<br>
+        String booleanInput = s.nextLine();<br>
+
+        boolean booleanValue = Boolean.parseBoolean(booleanInput);<br>
+        String stringResult = booleanToString(booleanValue);<br>
+
+        System.out.println("String equivalent: " + stringResult);<br>
+    }<br>
+
+    private static String booleanToString(boolean booleanValue) {<br>
+        return String.valueOf(booleanValue);<br>
+    }<br>
+}<br>
+
+
+    </p>
+    <br>
+    output<br>
+    <img src="javapro (1)/javapro/data conversion/dc22.png">
+</body>

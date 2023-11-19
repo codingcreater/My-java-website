@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>output</title>
+</head>
+<body>
+    code
+    <p>
+        class NestedTryBlock{    <br>
+    public static void main(String args[]){  <br> 
+    //outer try block   <br>
+     try{    <br>
+     //inner try block 1<br>  
+       try{    <br>
+        System.out.println("going to divide by 0");<br>    
+        int b =39/0;    <br>
+       }  <br>
+       //catch block of inner try block 1<br>  
+       catch(ArithmeticException e)  <br>
+       {  <br>
+         System.out.println(e);<br>  
+       }    <br>
+          
+       
+       //inner try block 2<br>  
+       try{    <br>
+       int a[]=new int[5];<br>    
+     
+       //assigning the value out of array bounds<br>  
+        a[5]=4;    <br>
+       }  <br>
+     
+       //catch block of inner try block 2<br>  
+       catch(ArrayIndexOutOfBoundsException e)<br>  
+       {  <br>
+          System.out.println(e);<br>  
+       }    <br>
+     
+         
+       System.out.println("other statement");<br>    
+     }  <br>
+     //catch block of outer try block<br>  
+     catch(Exception e)  <br>
+     {  <br>
+       System.out.println("handled the exception (outer catch)");<br>  
+     }    <br>
+       
+     System.out.println("normal flow..");<br>    
+    }    <br>
+        }  <br>
+   <br>
+</p>
+<br>
+output<br>
+<img src="javapro (1)/javapro/Exception handling/7050exceptionhandling11.png">
+</body>

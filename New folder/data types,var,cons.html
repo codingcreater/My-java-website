@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height:70px;
+        align-items: center;
+        background-color:black;
+        color:white;
+    }
+    .header-inner {
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border:0 2px solid white;
+        height: 60px;
+    
+    }
+    .header-inner ul{
+        list-style: none;
+        display: flex;
+
+    }
+
+    .logo span{
+        font-size: 2rem;
+    }
+
+    .header-inner ul li{
+        padding:1rem;
+    
+        
+    }
+
+    li a{
+        
+        padding:1rem;
+        text-decoration: none;
+        color:white;
+    }
+
+    li a:hover{
+        color:blueviolet
+    }
+
+    .logo-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    
+
+    }
+
+    .logo-content-inner{
+        padding:3rem;
+        width:50%;
+        max-width: 30%;
+        border:3px solid  black;
+        color:white;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .logo-content-inner h2{
+        color:white;
+    }
+</style>
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            <span>Coding Creator</span>
+        </div>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="SECOND.HTML">HTML</a></li>
+
+            <li><a href="FIRST.HTML">CSS</a></li>
+
+            <li><a href="third.html">JAVASCRIPT</a></li>
+
+            <li><a href="dbms.html">DBMS</a></li>
+
+
+
+
+
+        </ul>
+    </div>
+</header>
+
+<body>
+    <h1><u>Data Types</u></h1><br>
+    All the variables, constants, parameters of PL/SQL have a particular data type that defines its range of values, constraints, and the format in which they are stored. PL/SQL contains the data types like Large Object also known as LOB, Scalar, Reference, and Composite.<br>
+
+Scalar Data Types<br>
+Let us first discuss the Scalar Data Types which consist of the following:<br>
+
+NUMERIC data types that deal with values on which mathematical operations are done.<br>
+BOOLEAN data types that deal with the values on which logical operations are done.<br>
+CHARACTER data types that deal with the values consisting of alphanumeric ones.<br>
+DATE TIME data types.<br>
+<h1><u>Variables</u></h1><br>
+PL/SQL variable names follow the naming convention which consists of alphanumeric characters not more than thirty. PL/SQL is case insensitive and the keywords should not be used as a variable.<br>
+
+The variable name should be meaningful and can be followed by an underscore (_), number or dollar ($).<br>
+
+PL SQL Variable Declaration<br>
+
+Variables of PL/SQL must be available in the declaration area or present in a package as a global variable. PL/SQL reserves memory for the variables and the location of the storage is defined by the variable name.<br>
+
+Syntax for variable declaration:<br>
+
+variable_name [CONSTANT] datatype [NOT NULL] [:= | DEFAULT initial_value]<br>
+Here, the variable_name is an authentic PL/SQL identifier and data type can be a user-defined or a confirmed PL/SQL datatype.<br>
+
+<h3>Example</h3><br>
+<img src="images/var.png" alt="">  <br>
+
+<h1><u>Constants</u></h1><br>
+A constant keeps the value that is once declared unchanged throughout the program.<br>
+
+PL/SQL Constant declaration<br>
+
+The CONSTANT keyword is used to define constants in the program. It starts with a predefined value that remains the same throughout the program.<br>
+
+Syntax for variable declaration:<br>
+
+const_name CONSTANT data type := val<br>
+<h3>Example</h3><br>
+<img src="images/cons.png" alt="">  <br>
+</body>
+</html>

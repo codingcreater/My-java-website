@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+            .left , .right{
+                background-color: green;
+                height: 250px;
+                width: 250px;
+                border: 2px white solid;
+                margin: 30px;
+            }
+.left{
+    border-radius: 30px/60px;
+}
+.right{
+    border-radius: 60px/30px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </body>
+</html>

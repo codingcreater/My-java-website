@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+    <button onclick="Function(9,3,7)">Click</button>
+    <p id="demo"></p>
+    <script>
+  function Function(n1 , n2 , n3){
+  let res;
+ if(n1>n2 && n1>n3){
+res=`${n1} is greatest among three num`;
+}
+else if(n2>n1 && n2>n3){
+res=`${n2} is greatest among three num`;
+}
+else{
+res=`${n3} is greatest among three num`;
+}
+document.getElementById("demo").innerHTML=res;            
+}
+    </script>
+</body>
+</html>

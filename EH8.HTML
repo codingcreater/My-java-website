@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>output</title>
+</head>
+<body>
+    code
+    <p>
+//Write a Java program to connect the Java API to Database, if connection not successful then throw an exception<br>
+
+
+import java.sql.*;<br>
+class ExceptionHandle<br>
+{<br>
+public static void main(String st[])<br> 
+{<br>
+try<br>
+{<br>
+        Class.forName("com.mysql.jdbc.Driver");<br>
+        Connection c=DriverManager.getConnection("jdbc:mysql://localhost:3306/bharat?useSSL=false","root","god123456");<br>
+                System.out.println("Connect to database successfully");<br>
+        c.close();<br>
+
+        
+
+        }catch(ClassNotFoundException e){System.out.println("Unable to find class");}<br>
+        catch(SQLException e){System.out.println("Fail to connect!");}<br>
+        
+}<br>
+}<br>
+<br>
+</p>
+<br>
+output<br>
+<img src="javapro (1)/javapro/Exception handling/7101ExceptionHandling8.png">
+</body>

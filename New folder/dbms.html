@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+
+
+
+        header{
+            display: flex;
+            flex-direction: column;
+            height:70px;
+            align-items: center;
+            background-color:black;
+            color:white;
+        }
+        .header-inner {
+            width: 90%;
+            max-width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border:0 2px solid white;
+            height: 60px;
+        
+        }
+        .header-inner ul{
+            list-style: none;
+            display: flex;
+
+        }
+
+        .logo span{
+            font-size: 2rem;
+        }
+
+        .header-inner ul li{
+            padding:1rem;
+        
+            
+        }
+
+        li a{
+            
+            padding:1rem;
+            text-decoration: none;
+            color:white;
+        }
+
+        li a:hover{
+            color:blueviolet
+        }
+
+        .logo-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20%;
+        
+    
+        }
+
+        .logo-content-inner{
+            padding:3rem;
+            width:50%;
+            max-width: 30%;
+            border:3px solid  black;
+            color:white;
+            text-align: center;
+            font-size: 30px;
+
+        }
+
+        .logo-content-inner h2{
+            color:white;
+        }
+    </style>
+    <header>
+        <div class="header-inner">
+
+            <div class="logo">
+                <span>Coding Creator</span>
+            </div>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="SECOND.HTML">HTML</a></li>
+
+                <li><a href="FIRST.HTML">CSS</a></li>
+
+                <li><a href="third.html">JAVASCRIPT</a></li>
+
+                <li><a href="dbms.html">DBMS</a></li>
+
+
+
+
+
+            </ul>
+        </div>
+    </header>
+
+
+
+   <h1 style="text-align: center;"> <u>What is DBMS?</u></h1> <br>
+   <p style="font-size: larger;">Database Management System (DBMS) is software for storing and retrieving users data while considering appropriate security measures. It consists of a group of programs that manipulate the database. The DBMS accepts the request for data from an application and instructs the operating system to provide the specific data. In large systems, a DBMS helps users and other third-party software store and retrieve data.
+    
+    DBMS allows users to create their own databases as per their requirements. The term “DBMS” includes the user of the database and other application programs. It provides an interface between the data and the software application.<br>
+     Database management system is a software which is used to manage the database. For example: MySQL, Oracle, etc are a very popular commercial database which is used in different applications.
+    DBMS provides an interface to perform various operations like database creation, storing data in it, updating data, creating a table in the database and a lot more.
+    It provides protection and security to the database. In the case of multiple users, it also maintains data consistency.</p>
+
+    <h1 style="text-align: center;"><u>Example of a DBMS</u></h1> <br>
+    <p style="font-size: larger;">Let us see a simple example of a university database. This database is maintaining information concerning students, courses, and grades in a university environment. The database is organized as five files:<br>
+
+The STUDENT file stores the data of each student.<br>
+The COURSE file stores contain data on each course.<br>
+The SECTION stores information about sections in a particular course.<br>
+The GRADE file stores the grades which students receive in the various sections<br>
+The TUTOR file contains information about each professor.<br>
+To define DBMS:<br>
+
+We need to specify the structure of the records of each file by defining the different types of data elements to be stored in each record.
+We can also use a coding scheme to represent the values of a data item.
+Basically, your Database will have 5 tables with a foreign key defined amongst the various tables.</p>
+
+<h1 style="text-align: center;"><u>Characteristics of DBMS</u></h1> <br>
+<p style="font-size: larger;">Here are the characteristics and properties of a Database Management System:<br>
+
+Provides security and removes redundancy.<br>
+Self-describing nature of a database system.<br>
+Insulation between programs and data abstraction.<br>
+Support of multiple views of the data.<br>
+Sharing of data and multiuser transaction processing.<br>
+Database Management Software allows entities and relations among them to form tables.<br>
+It follows the ACID concept ( Atomicity, Consistency, Isolation, and Durability).<br>
+DBMS supports a multi-user environment that allows users to access and manipulate data in parallel.</p><br>
+
+<h1 style="text-align: center;"><u>Explain SQL.</u></h1> <br>
+<p style="font-size: larger;">SQL stands for Structured Query Language
+SQL lets you access and manipulate databases
+SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987.Structured Query Language is a computer language that we use to interact with a relational database. SQL is a tool for organizing, managing, and retrieving archived data from a computer database. The original name was given by IBM as Structured English Query Language, abbreviated by the acronym SEQUEL. When data needs to be retrieved from a database, SQL is used to make the request. The DBMS processes the SQL query retrieves the requested data and returns it to us. Rather, SQL statements describe how a collection of data should be organized or what data should be extracted or added to the database.SQL is the standard language to communicate with Relational Database Systems. All the Relational Database Management Systems (RDMS) like MySQL, MS Access, Oracle, Sybase, Informix, Postgres and SQL Server use SQL as their Standard Database Language.</p>
+
+<h1 style="text-align: center;"><u>What Can SQL do?</u></h1><br>
+<p style="font-size: larger;">SQL can execute queries against a database<br>
+SQL can retrieve data from a database<br>
+SQL can insert records in a database<br>
+SQL can update records in a database<br>
+SQL can delete records from a database<br>
+SQL can create new databases<br>
+SQL can create new tables in a database<br>
+SQL can create stored procedures in a database<br>
+SQL can create views in a database<br>
+SQL can set permissions on tables, procedures, and views</p><br>
+
+<h1 style="text-align: center;"><u>SQL DATABASE</u></h1><br>
+<h2><a href="constraints.html"> SQL Constraints</a></h2><br>
+<h2><a href="clauses.html">SQL Clauses</a></h2><br>
+<h2><a href="commands.html">SQL Commands</a></h2><br>
+<h2><a href="operator.html">SET Operators</a></h2><br>
+
+<h1 style="text-align: center;"><u>PL/SQL DATABASE</u></h1><br>
+<h2><a href="basic syntax.html"> Basic Syntax</a></h2><br>
+<h2><a href="data types,var,cons.html">Data Types,Variables,Constants</a></h2><br>
+<h2><a href="procedures.html">Procedures</a></h2><br>
+<h2><a href="functions.html">Functions</a></h2><br>
+<h2><a href="exception.html">Exception Handling</a></h2><br>
+<h2><a href="cursors.html">Cursors</a></h2><br>
+<h2><a href="packages.html">Packages</a></h2><br>
+<h2><a href="triggers.html">Triggers</a></h2><br>
+</body>
+</html>

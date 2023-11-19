@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height:70px;
+        align-items: center;
+        background-color:black;
+        color:white;
+    }
+    .header-inner {
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border:0 2px solid white;
+        height: 60px;
+    
+    }
+    .header-inner ul{
+        list-style: none;
+        display: flex;
+
+    }
+
+    .logo span{
+        font-size: 2rem;
+    }
+
+    .header-inner ul li{
+        padding:1rem;
+    
+        
+    }
+
+    li a{
+        
+        padding:1rem;
+        text-decoration: none;
+        color:white;
+    }
+
+    li a:hover{
+        color:blueviolet
+    }
+
+    .logo-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    
+
+    }
+
+    .logo-content-inner{
+        padding:3rem;
+        width:50%;
+        max-width: 30%;
+        border:3px solid  black;
+        color:white;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .logo-content-inner h2{
+        color:white;
+    }
+</style>
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            <span>Coding Creator</span>
+        </div>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="SECOND.HTML">HTML</a></li>
+
+            <li><a href="FIRST.HTML">CSS</a></li>
+
+            <li><a href="third.html">JAVASCRIPT</a></li>
+
+            <li><a href="dbms.html">DBMS</a></li>
+
+
+
+
+
+        </ul>
+    </div>
+</header>
+
+
+
+<body>
+    <h1 style="text-align: center;"><u>SQL CLAUSES</u></h1><br>
+SQL clause helps us to retrieve a set or bundles of records from the table.<br>
+SQL clause helps us to specify a condition on the columns or the records of a table.<br>
+<h3>Different clauses available in the Structured Query Language are as follows:</h3><br>
+
+<ul><li>WHERE CLAUSE</li><br>
+<li>GROUP BY CLAUSE</li><br>
+<li>HAVING CLAUSE</li><br>
+<li>ORDER BY CLAUSE</li></ul><br>
+Let's see each clause one by one with an example. We will use MySQL database for writing the queries in examples.<br>
+
+<h3>1. WHERE CLAUSE</h3><br>
+A WHERE clause in SQL is used with the SELECT query, which is one of the data manipulation language commands. WHERE clauses can be used to limit the number of rows to be displayed in the result set, it generally helps in filtering the records. It returns only those queries which fulfill the specific conditions of the WHERE clause. WHERE clause is used in SELECT, UPDATE, DELETE statement, etc.<br>
+
+WHERE clause with SELECT Query<br>
+Asterisk symbol is used with a WHERE clause in a SELECT query to retrieve all the column values for every record from a table.<br>
+
+<h3>Syntax of where clause with a select query to retrieve all the column values for every record from a table:</h3><br>
+
+SELECT * FROM TABLENAME WHERE CONDITION;  <br>
+If according to the requirement, we only want to retrieve selective columns, then we will use below syntax:<br>
+
+SELECT COLUMNNAME1, COLUMNNAME2 FROM TABLENAME WHERE CONDITION;  <br>
+
+<h3>2. GROUP BY CLAUSE</h3><br>
+The Group By clause is used to arrange similar kinds of records into the groups in the Structured Query Language. The Group by clause in the Structured Query Language is used with Select Statement. Group by clause is placed after the where clause in the SQL statement. The Group By clause is specially used with the aggregate function, i.e., max (), min (), avg (), sum (), count () to group the result based on one or more than one column.<br>
+
+<h3>The syntax of Group By clause:</h3><br>
+SELECT * FROM TABLENAME GROUP BY COLUMNNAME; <br>  
+<img src="images/group.png" alt="">  <br>
+<h3>3. HAVING CLAUSE:</h3><br>
+When we need to place any conditions on the table's column, we use the WHERE clause in SQL. But if we want to use any condition on a column in Group By clause at that time, we will use the HAVING clause with the Group By clause for column conditions.<br>
+
+<h3>Syntax:</h3><br>
+TABLENAME GROUP BY COLUMNNAME HAVING CONDITION;   <br>
+<img src="images/having.png" alt="">  <br>
+<h3>4. ORDER BY CLAUSE</h3><br>
+Whenever we want to sort anything in SQL, we use the ORDER BY clause. The ORDER BY clause in SQL will help us to sort the data based on the specific column of a table. This means that all the data stored in the specific column on which we are executing the ORDER BY clause will be sorted. The corresponding column values will be displayed in the sequence in which we have obtained the values in the earlier step.<br>
+
+As we all know, sorting means either in ASCENDING ORDER or DESCENDING ORDER. In the same way, ORDER BY CLAUSE sorts the data in ascending or descending order as per our requirement. The data will be sorted in ascending order whenever the ASC keyword is used with ORDER by clause, and the DESC keyword will sort the records in descending order.<br>
+
+By default, sorting in the SQL will be done using the ORDER BY clause in ASCENDING order if we didn't mention the sorting order.<br>
+
+Before moving towards the example of the ORDER BY clause to sort the records, first, we will look at syntax so it will be easy for us to go through the example.<br>
+
+<h3>Syntax of ORDER BY clause without asc and desc keyword:</h3><br>
+SELECT COLUMN_NAME1, COLUMN_NAME2 FROM TABLE_NAME ORDER BY COLUMNAME; <br> 
+Syntax of ORDER BY clause to sort in ascending order:<br>
+SELECT COLUMN_NAME1, COLUMN_NAME2 FROM TABLE_NAME ORDER BY COLUMN_NAME ASC;<br>  
+Syntax of ORDER BY clause to sort in descending order:<br>
+SELECT COLUMN_NAME1, COLUMN_NAME2 FROM TABLE_NAME ORDER BY COLUMN_NAME DESC;<br>
+</body>
+</html>
